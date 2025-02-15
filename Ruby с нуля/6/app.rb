@@ -1,7 +1,6 @@
-require "yaml"
-YAML.safe_load_file('file.yml',symbolize_names: true) # symbolize_names if you want to make keys as symbols
- #inject, fileutils, between, strftime
-
+require 'yaml'
+YAML.safe_load_file('file.yml', symbolize_names: true) # symbolize_names if you want to make keys as symbols
+# inject, fileutils, between, strftime
 
 # in file.yml or in file.yaml
 # key1: value1

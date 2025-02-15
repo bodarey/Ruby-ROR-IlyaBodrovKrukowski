@@ -1,17 +1,17 @@
-puts "choose (1 for USA, 2 for Japan, 3 for others)"
+puts 'choose (1 for USA, 2 for Japan, 3 for others)'
 country = gets.to_i
-puts " enter the age: "
+puts ' enter the age: '
 age = gets.to_i
 
-if (country > 0 && country < 4)
-  if !(country == 1 || country == 2) && age >= 18
-	puts "your access is granted"
-  elsif age >= 21	
-    puts "your access is granted"
+if country > 0 && country < 4
+  if ![1, 2].include?(country) && age >= 18
+    puts 'your access is granted'
+  elsif age >= 21
+    puts 'your access is granted'
   else
-    puts "your access is restricted"
+    puts 'your access is restricted'
 
   end
-else 
-  puts "your number is not from menu"
+else
+  puts 'your number is not from menu'
 end
